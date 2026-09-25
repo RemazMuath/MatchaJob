@@ -4,10 +4,10 @@ An automated job aggregation and smart classification platform designed to colle
 
 ## Tech Stack
 
-- Laravel 12
-- PostgreSQL
-- Docker
-- Docker Compose
+- **Backend:** Laravel 12
+- **Frontend:** Blade + Tailwind CSS
+- **Database:** PostgreSQL
+- **Environment:** Docker & Docker Compose
 
 ## Quick Start
 1. Start the PostgreSQL container:
