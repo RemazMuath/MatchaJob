@@ -9,8 +9,8 @@ class Source extends Model
     protected $fillable =
     ['name','type','url'];
 
-    public function jobs()
+    public function jobPosts()
     { // one source can have many jobs !!
-        return $this->hasMany(Job::class);
+        return $this->hasMany(JobPost::class);
     }
 }

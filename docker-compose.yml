@@ -12,5 +12,18 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:2.41.6
+    container_name: matchajob_n8n
+    restart: always
+    environment:
+      - GENERIC_TIMEZONE=Asia/Riyadh
+      - TZ=Asia/Riyadh
+    ports:
+      - "5678:5678"
+    volumes:
+      - n8ndata:/home/node/.n8n
+
 volumes:
   pgdata:
+  n8ndata:
